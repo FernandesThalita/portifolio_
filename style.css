@@ -1,21 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
 }
-body{
+
+body {
     color: #111;
     background-color: #e4e3e3;
 }
 
-:root{
+:root {
     --Color: #fff;
 }
 
 /* HEADER */
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,22 +27,24 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
+
 }
-.logo{
+
+.logo {
     position: relative;
     font-size: 25px;
-    color:#111;
+    color: #111;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-.navbar a{
+
+.navbar a {
     display: inline-block;
     font-size: 25px;
-    color:#111;
+    color: #111;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -49,11 +52,13 @@ body{
     opacity: 0;
     animation: slideTop .5s ease forwards;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: rgb(205, 120, 196);
 
 }
-.home{
+
+.home {
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -64,51 +69,59 @@ body{
     padding: 70px 10% 0;
 
 }
-.home-conteudo{
+
+.home-conteudo {
     display: flex;
     justify-content: center;
 
 }
-.home-conteudo .img{
+
+.home-conteudo .img {
     width: 50%;
     height: auto;
     animation: slideLeft 1s ease forwards;
-    
+
 }
-.home-conteudo .img img{
+
+.home-conteudo .img img {
     background-image: none;
     width: 100%;
     border-radius: 55%;
     height: auto;
     border-bottom: 3px solid #fff;
-    box-shadow:0 0 10px #9b919c ;
+    box-shadow: 0 0 10px #9b919c;
 }
-.home-conteudo .conteudo-texto{
+
+.home-conteudo .conteudo-texto {
     max-width: 600px;
 }
-.conteudo-texto h3{
-    font-size: 32px;
+
+.conteudo-texto h3 {
+    font-size: 3em;
     font-weight: 700;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .6s;
 }
-.conteudo-texto h1 span{
-    color:#c566d2;
+
+.conteudo-texto h1 span {
+    color: #c566d2;
 }
-.conteudo-texto h1{
+
+.conteudo-texto h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
     margin-bottom: 30px
 }
 
-.conteudo-texto p{
+.conteudo-texto p {
     font-size: 20px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-.home-sci a{
+
+.home-sci a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -125,15 +138,17 @@ body{
     opacity: 0;
     animation-delay: .3s;
 }
-.home-sci a:hover{
+
+.home-sci a:hover {
     background-color: #9f2baf;
     color: #e4e3e3;
-    box-shadow:0 0 20px #9f2baf ;
+    box-shadow: 0 0 20px #9f2baf;
 }
-.btn-box{
+
+.btn-box {
     display: inline-block;
     padding: 12px 28px;
-    box-shadow: 1px 16px 8px 0px rgba(0,0,0,0.12);
+    box-shadow: 1px 16px 8px 0px rgba(0, 0, 0, 0.12);
     border-radius: 40px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -141,74 +156,138 @@ body{
     font-weight: 600;
     animation: slideBottom 1s ease-out forwards;
 }
-.btn-box:hover{
+
+.btn-box:hover {
     box-shadow: none;
     background-color: #c566d2;
     color: #e4e3e3;
 }
 
-section{
+section {
     display: flex;
     flex-wrap: wrap;
 }
-.container1{
+
+.sub-titulo{
+    background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+.container1 {
     width: 600px;
     margin: 60px auto;
     color: #c566d2;
     padding: 20px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.container1 li{
+
+.container1 li {
     margin: 20px 0;
     padding: 10px;
+    text-transform: uppercase;
 }
-.bar{
+
+.bar {
     background-color: #ccc;
     display: block;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@keyframes slideRight{
-    0%{
-        transform:translateX(-100px) ;
+.bar span {
+    height: 20px;
+    float: left;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    
+}
+
+.html {
+    width: 90%;
+}
+.css{
+    width: 67%;
+}
+.js{
+    width: 80%;
+}
+.php{
+    width: 50%;
+}
+.flutter{
+    width: 60%;
+}
+.api{
+    width: 70%;
+}
+.dart{
+    width: 80%;
+}
+.sql{
+    width: 76%;
+}
+.python{
+    width: 89%;
+}
+.java{
+    width: 86%;
+}
+.nodejs{
+    width: 64%;
+}
+.bootstrap{
+    width: 65%;
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
-        transform:translateX(0px) ;
+
+    100% {
+        transform: translateX(0px);
         opacity: 1;
     }
 }
-@keyframes slideTop{
-    0%{
-        transform:translateY(100px) ;
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
         opacity: 0;
     }
-    100%{
-        transform:translateY(0px) ;
+
+    100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
-@keyframes slideBottom{
-    0%{
-        transform:translateY(-100px) ;
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
-        transform:translateY(0px) ;
+
+    100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
-@keyframes slideLeft{
-    0%{
-        transform:translateX(100px) ;
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
         opacity: 0;
     }
-    100%{
-        transform:translateY(0px) ;
+
+    100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
