@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
 }
 body{
     color: #111;
@@ -152,90 +153,24 @@ section{
 }
 .container1{
     width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
-}
-.heading1{
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-    color: #b678c4;
-}
-.barra{
-    font-size: 23px;
-
-}
-.barra i{
+    margin: 60px auto;
     color: #c566d2;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.barras-tecnicas .barra{
-    margin-top: 40px 0;
+.container1 li{
+    margin: 20px 0;
+    padding: 10px;
 }
-.barras-tecnicas .barra:first-child{
-    margin-top: 0;
-}
-.barras-tecnicas .barra:last-child{
-    margin-bottom: 0;
-}
-.barras-tecnicas .barra .info{
-    margin-bottom: 5px;
-}
-.barras-tecnicas .barra .info span{
-    font-size: 17px;
-    font-weight: 500;
-    /* opacity: 0;
-    animation: mostrarTxt 0.5s 1s linear forwards; */
-}
-.barras-tecnicas .barra .progressao-linha{
-    position: relative;
+.bar{
+    background-color: #ccc;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: #635e5e;
-    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-@keyframes animate{
-    100%{
-        transform: scaleX(1);
-    }
-}
-.barras-tecnicas .barra .progressao-linha span{
-    height: 100%;
-    background-color: #b678c4;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-.progressao-linha.html span{
-    width: 90%;
-}
-.progressao-linha.php span{
-    width: 70%;
-}
-.progressao-linha.css span{
-    width: 80%;
-}
-.progressao-linha.js span{
-    width: 86%;
-}
-.progressao-linha.crud span{
-    width: 100%;
-}
-
-.progressao-linha span::after{
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #9f2baf;
-    color: #fff;
-}
-
 
 @keyframes slideRight{
     0%{
