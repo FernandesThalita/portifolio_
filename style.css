@@ -85,7 +85,8 @@ body {
 
 .home-conteudo .img img {
     background-image: none;
-    width: 100%;
+    width: 400px;
+    margin-left: 50px;
     border-radius: 55%;
     height: auto;
     border-bottom: 3px solid #fff;
@@ -168,82 +169,48 @@ section {
     flex-wrap: wrap;
 }
 
-.sub-titulo{
+#linguagens {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    font-size: 1.5em;
+}
+
+#linguagens .titulo {
+    display: flex;
+    justify-content: center;
     background: #121FCF;
-background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
+    background: linear-gradient(to right, #121FCF 0%, #cf1299 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
-.container1 {
-    width: 600px;
-    margin: 60px auto;
-    color: #c566d2;
-    padding: 20px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+#linguagens .container .lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    flex-wrap: wrap;
+    max-width: 600px;
 }
 
-.container1 li {
-    margin: 20px 0;
+.linguagem {
+    margin: 8px;
+    padding: 9px;
+    cursor: pointer;
+   
+}
+
+
+
+.linguagem i {
+    box-shadow: 1px 16px 8px 0px rgba(0, 0, 0, 0.12);
     padding: 10px;
-    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 5.5rem;
+
 }
 
-.bar {
-    background-color: #ccc;
-    display: block;
-    height: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.bar span {
-    height: 20px;
-    float: left;
-    background: rgb(63, 94, 251);
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    
-}
-
-.html {
-    width: 90%;
-}
-.css{
-    width: 67%;
-}
-.js{
-    width: 80%;
-}
-.php{
-    width: 50%;
-}
-.flutter{
-    width: 60%;
-}
-.api{
-    width: 70%;
-}
-.dart{
-    width: 80%;
-}
-.sql{
-    width: 76%;
-}
-.python{
-    width: 89%;
-}
-.java{
-    width: 86%;
-}
-.nodejs{
-    width: 64%;
-}
-.bootstrap{
-    width: 65%;
-}
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -289,5 +256,11 @@ background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+@media screen and (max-width: 300px){
+    .home {
+        display: flex;
+        flex-direction: column;
     }
 }
