@@ -85,7 +85,7 @@ body {
 
 .home-conteudo .img img {
     background-image: none;
-    width: 400px;
+    width: 100%;
     margin-left: 50px;
     border-radius: 55%;
     height: auto;
@@ -176,6 +176,7 @@ section {
     font-size: 1.5em;
 }
 
+
 #linguagens .titulo {
     display: flex;
     justify-content: center;
@@ -189,9 +190,14 @@ section {
 #linguagens .container .lista {
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 10%;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 900px;
+    box-shadow: 4px 4px 25px 0px rgba(0,0,0,0.75) inset;
+    padding: 40px 20px 40px 10px;
+    border-radius: 5%;
+    border: 2px solid #fff;
+
 }
 
 .linguagem {
