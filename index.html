@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-
-
+    <link rel="icon" type="image/x-icon" href="media/img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Portifólio-Thalita </title>
 </head>
@@ -28,8 +27,8 @@
             <a href="#">Contato</a>
         </nav> -->
     </header>
-    <section class="home">
-        <div class="home-conteudo">
+    <section class="home" id="inicio">
+        <div class="home-conteudo" >
             <div class="conteudo-texto">
                 <h3>Thalita Fernandes</h3>
                 <h1>
@@ -42,8 +41,8 @@
                 </p>
                 <div class="home-sci">
                     <a href="#"><i class="bx bxl-whatsapp"></i></a>
-                    <a href="#"><i class="bx bxl-github"></i></a>
-                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/FernandesThalita"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/thalita-de-lima-05602b280/"><i class="bx bxl-linkedin"></i></a>
                 </div>
                 <a href="#" class="btn-box">Download CV</a>
             </div>
@@ -54,9 +53,9 @@
     </section>
 
     <section id="linguagens">
-        <div class="container">
+        <div class="container" id="habilidades">
             <div class="row">
-                <h1 class="titulo">
+                <h1 class="titulo" >
                     { Habilidades }
                 </h1>
                 <div class="lista">
@@ -134,7 +133,133 @@
         </div>
     </section>
 
+
+    <div class="projetos" id="projetos">
+        <h3 class="titulo">{ Projetos }</h3>
+    </div>
+
+    <ul class="cards">
+        <li>
+            <div href="" class="card">
+                <img src="media/img/projeto_clima.png" class="card_img">
+                <div class="card_overlay">
+                    <div class="card_header">
+                        <div class="card_header-text">
+                            <h3 class="card_title">
+                                API OpenWeatherMap
+                            </h3>
+                            <span>API,JS,HTML,CSS,JSON</span>
+                        </div>
+                    </div>
+                    <p class="card_description">
+                        API que retorna as codições climáticas do local pesquisado.
+                        <a href="https://fernandesthalita.github.io/OpenWeatherMap_project/">Visualizar / </a>
+                        <a href="https://github.com/FernandesThalita/OpenWeatherMap_project.git">Repositório</a>
+                    </p>
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div href="" class="card">
+                <img src="media/img/cobrinha_projeto.png" class="card_img">
+                <div class="card_overlay">
+                    <div class="card_header">
+                        <div class="card_header-text">
+                            <h3 class="card_title">
+                                Jogo da Cobrinha
+                            </h3>
+                            <span>JS,HTML,CSS,CANVAS</span>
+                        </div>
+                    </div>
+                    <p class="card_description">
+                        Jogo clássico da cobrinha e a maçã(para desktops)
+                        <a href="https://fernandesthalita.github.io/Jogo_Cobrinha/">Visualizar / </a>
+                        <a href="https://github.com/FernandesThalita/Jogo_Cobrinha.git">Repositório</a>
+                    </p>
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div href="" class="card">
+                <img src="media/img/chat_projeto.png" class="card_img">
+                <div class="card_overlay">
+                    <div class="card_header">
+                        <div class="card_header-text">
+                            <h3 class="card_title">
+                                Chat Socket.io
+                            </h3>
+                            <span>NodeJS,HTML,CSS,Express,Server</span>
+                        </div>
+                    </div>
+                    <p class="card_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, voluptate doloribus.
+                        <a href="https://chat-thalitahfernades.b4a.run/">Visualizar / </a>
+                        <a href="https://github.com/FernandesThalita/Chat.git">Repositório</a>
+                    </p>
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div href="" class="card">
+                <img src="media/img/adivinheAImagem_projeto.png" class="card_img">
+                <div class="card_overlay">
+                    <div class="card_header">
+                        <div class="card_header-text">
+                            <h3 class="card_title">
+                                Adivinhe a Imagem(jogo)
+                            </h3>
+                            <span>JS,HTML,CSS</span>
+                        </div>
+                    </div>
+                    <p class="card_description">
+                        Será exibido imagens borradas, e o usuário deverá acertar o que é.
+                        <a href="https://fernandesthalita.github.io/Jogo-adivinhe-a-imagem/">Visualizar / </a>
+                        <a href="https://github.com/FernandesThalita/Jogo-adivinhe-a-imagem.git">Repositório</a>
+                    </p>
+
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="container-footer">
+        <footer>
+            <div class="ondas">
+                <div class="onda" id="onda1"></div>
+                <div class="onda" id="onda2"></div>
+                <div class="onda" id="onda3"></div>
+                <div class="onda" id="onda4"></div>
+            </div>
+            <ul class="icone-redes">
+                <li><a href=""> <i class="bx bxl-whatsapp"></i>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/thalita-de-lima-05602b280/"> <i class="bx bxl-linkedin"></i>
+                    </a></li>
+                <li><a href="https://github.com/FernandesThalita"> <i class="bx bxl-github"></i>
+                    </a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+            <div class="img">
+                <img src="media/img/icons8-code-96.png" width="60px">
+            </div>
+        </footer>
+    </div>
+
+
     <script src="main.js"></script>
+    <script src="reveal.js"></script>
+    <script src="script.js"></script>
+<script type="text/javascript">
+    ScrollOut({
+        targets: 'h1,h3'
+    })
+</script>
 </body>
 
 
