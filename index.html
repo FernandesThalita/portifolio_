@@ -10,49 +10,70 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Portifólio-Thalita </title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            < Thalita />
-        </a>
 
-        <!-- <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Sobre Mim</a>
-            <a href="#">Skill</a>
-            <a href="#">Contato</a>
-        </nav> -->
-    </header>
-    <section class="home" id="inicio">
-        <div class="home-conteudo" >
-            <div class="conteudo-texto">
-                <h3>Thalita Fernandes</h3>
-                <h1>
-                    < <span id="text"></span>
-                </h1>
-                <p>Sou desenvolvedora FullStack , e estudo programação desde meus 15 anos de idade.
-                    <br>Tenho conhecimento técnico em várias linguagens e técnologias. Com o foco em desenvolvimento web
-                    e
-                    interface de aplicações mobile.
-                </p>
-                <div class="home-sci">
-                    <a href="#"><i class="bx bxl-whatsapp"></i></a>
-                    <a href="https://github.com/FernandesThalita"><i class="bx bxl-github"></i></a>
-                    <a href="https://www.linkedin.com/in/thalita-de-lima-05602b280/"><i class="bx bxl-linkedin"></i></a>
-                </div>
-                <a href="#" class="btn-box">Download CV</a>
+    <nav id="navegacao">
+        <div class="logo" id="inicio">
+            < Thalita />
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger">
+        <div class="logo" id="inicio">
+            < Thalita />
+        </div>
+        <div class="hamburger-menu">
+            <div class="icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="menu-links">
+            <li><a href="#inicio" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#habilidades" onclick="toggleMenu()">Habilidades</a></li>
+            <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+        </div>
+    </nav>
+
+
+    <section id="perfil">
+
+        <div class="perfil-texto">
+            <p class="p2">Olá, sou a Thalita </p>
+            <h1 class="title" id="taping"></h1>
+            <div class="p1" > Desenvolvedora FullStack e estudo programação desde meus 15 anos de idade. Foco em desenvolvimento web e interface mobile </div>
+            <div class="btn-container">
+                <button class="btn" onclick="window.open('./assets/_Curriculo.pdf')">Download CV</button>
+                <button class="btn">
+                    <a href="mailto:thalitahlimah@gmail.com" style="color: #3c4043;"> Contato</a>
+                </button>
+            </div>
+            <div id="container-social">
+                <a href="https://api.whatsapp.com/send?phone=5511911702172" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://github.com/FernandesThalita"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/thalita-de-lima-05602b280/"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </section>
 
+
     <section id="linguagens">
         <div class="container" id="habilidades">
             <div class="row">
-                <h1 class="titulo" >
+                <h1 class="titulo">
                     { Habilidades }
                 </h1>
                 <div class="lista">
@@ -220,6 +241,44 @@
                 </div>
             </div>
         </li>
+        <li>
+            <div href="" class="card">
+                <img src="media/img/emBreve.png" class="card_img">
+                <div class="card_overlay">
+                    <div class="card_header">
+                        <div class="card_header-text">
+                            <h3 class="card_title">
+                                Landing Page(EM BREVE)
+                            </h3>
+                            <span>HTML,JS,SCSS</span>
+                        </div>
+                    </div>
+                    <p class="card_description">
+                        Projeto front-end de uma página home.
+                    </p>
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div href="" class="card">
+                <img src="media/img/emBreve.png" class="card_img">
+                <div class="card_overlay">
+                    <div class="card_header">
+                        <div class="card_header-text">
+                            <h3 class="card_title">
+                                Data Base(EM BREVE)
+                            </h3>
+                            <span>PHP,SQL,DB,ReactJS</span>
+                        </div>
+                    </div>
+                    <p class="card_description">
+                        Projeto back-end, que utiliza banco de dados.
+                    </p>
+
+                </div>
+            </div>
+        </li>
     </ul>
     <div class="container-footer">
         <footer>
@@ -230,8 +289,7 @@
                 <div class="onda" id="onda4"></div>
             </div>
             <ul class="icone-redes">
-                <li><a href=""> <i class="bx bxl-whatsapp"></i>
-                    </a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511911702172" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/thalita-de-lima-05602b280/"> <i class="bx bxl-linkedin"></i>
                     </a></li>
                 <li><a href="https://github.com/FernandesThalita"> <i class="bx bxl-github"></i>
@@ -252,11 +310,11 @@
     <script src="main.js"></script>
     <script src="reveal.js"></script>
     <script src="script.js"></script>
-<script type="text/javascript">
-    ScrollOut({
-        targets: 'h1,h3'
-    })
-</script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: 'h1,h3'
+        })
+    </script>
 </body>
 
 
