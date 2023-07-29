@@ -175,23 +175,7 @@ section{
     gap: 1rem;
 
 }
-.btn{
-    font-weight: 600;
-    text-decoration: none;
-    transition: all .2s ease;
-    width: 8rem;
-    padding: 10px;
-    border-radius: 2rem;
 
-}
-.btn-color-1,.btn-color-2{
-    border: #b28a9e 1px solid;
-}
-.btn-color-1:hover,.btn-color-2:hover{
-    cursor: pointer;
-    background: #C534CF;
-    color: white;
-}
 
 
 
@@ -200,7 +184,7 @@ section{
 .btn {
   align-items: center;
   appearance: none;
-  background-color: #fff;
+  background: transparent;
   border-radius: 5px;
   border-style: none;
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
